@@ -16,17 +16,6 @@ const books: Book[] = []
 // Function: addBook
 // ------------------------------
 function addBook(title: string, author: string, year: number): void {
-  // Input validation
-  if (!title) {
-    console.log('Error: title must be filled in first')
-  }
-  if (!author) {
-    console.log('Error: author must be filled in second place')
-  }
-  if (!year) {
-    console.log('Error: year must be filled in third place')
-  }
-
   // Add book to the list
   const newBook: Book = { title, author, year }
   books.push(newBook)
